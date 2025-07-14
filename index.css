@@ -1,0 +1,323 @@
+:root {
+  --bs-primary: #002F55; /* Verde Aqua */
+  --bs-secondary: #f39c12; /* Naranja */
+  --bs-success: #2ecc71; /* Verde */
+  --bs-danger: #e74c3c; /* Rojo */
+  --bs-warning: #f1c40f; /* Amarillo */
+  --bs-info: #3498db; /* Azul Claro */
+  --bs-light: #ecf0f1; /* Gris Claro */
+  --bs-dark: #34495e; /* Gris Oscuro */
+  --bs-azul: #023E8A;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.header{
+  backdrop-filter: blur(10px);
+}
+
+.i-sesion {
+  position: relative; /* Necesario para posicionar ::after */
+  display: inline-block; /* Para que solo ocupe el contenido */
+}
+
+.i-sesion:hover {
+  color: #FEFEFE; /* Cambia el color al hacer hover */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+.i-sesion::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px; /* Grosor de la línea */
+  width: 0; /* Empieza oculta */
+  background-color: #0d6efd; /* Color Bootstrap azul */
+  transition: width 0.3s ease-in-out; /* Animación suave */
+}
+
+.i-sesion:hover::after {
+  width: 100%; /* Al hacer hover crece a todo el ancho */
+}
+
+@keyframes levitate {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+.bs-azul {
+    background-color: var(--bs-azul) !important;
+    color: #fff !important;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bs-azul:hover{
+  transform: scale(1.03);
+}
+
+.bs-azul-vis{
+  background-color: var(--bs-azul);
+  color: #FEFEFE;
+  border: 2px solid var(--bs-azul);
+}
+
+.bs-azul-vis:hover{
+  background-color: #FEFEFE;
+  color: #002F55;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #000b17;
+    background: linear-gradient(0deg,#000b17 20%, #020202 80%);
+    background: -webkit-linear-gradient(0deg,#000b17 20%, #020202 80%);
+    background: -moz-linear-gradient(0deg,#000b17 20%, #020202 80%);
+    color: #FEFEFE;
+    overflow-x: hidden;
+}
+
+.hero{
+  background-image: url(imagen/f_dos.jpg);
+  min-height: 100vh;
+  mask-repeat: no-repeat;
+  padding-top: 100px;
+  background-size: cover;
+}
+
+
+
+.hero-contacto{
+  background-image: url(imagen/OPCION3.jpeg);
+  /* background-color: #fafafa9c; */
+  background-size:cover;
+ background-repeat: no-repeat;
+  background-attachment: fixed; /* Para efecto tipo parallax */
+  background-position: center;
+  min-height: 100vh;
+  animation: moverBackground 15s ease-in-out infinite alternate;
+  scroll-margin-top: 60px;
+}
+
+@keyframes moverBackground {
+  0% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
+
+.t{
+  color: var(--bs-azul);
+}
+
+.img-hero{
+  filter: drop-shadow(1px 1px 1px #fefefe);
+  animation: levitate 3s ease-in-out infinite;
+}
+.img-hero-nav{
+  filter: drop-shadow(1px 1px 1px #fefefe);
+}
+
+.card_bg{
+  background-color: transparent;
+  border: none;
+  color: #FEFEFE;
+}
+
+/* .card_bg:hover{
+  background-color: var(--bs-azul);
+  color: #FEFEFE;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: scale(1.03);
+} */
+
+.btn-info{
+  background-color: #FEFEFE;
+  border: none;
+  height: 30px;
+  font-size: 0.8em;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  color: var(--bs-azul);
+}
+
+.btn-info:hover{
+  background-color: var(--bs-azul);
+  color: #FEFEFE;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  outline: 1px solid #FEFEFE;
+  
+}
+
+.card_bg:hover .btn-info{
+  opacity: 100%;
+  
+}
+
+.menu{
+  background-color: var(--bs-azul);
+}
+
+.menuitem:hover{
+  background-color: #FEFEFE;
+  color: var(--bs-azul);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: scale(1.03);
+}
+
+.card_ad_servi{
+  background-color: #FEFEFE;
+  color: #020202;
+  border-radius: 15px;
+  color: #023E8A;
+}
+
+.btn_ad_servi{
+  background-color: #023E8A;
+  border: 1px solid #023E8A;
+}
+
+.btn_ad_servi:hover{
+  background-color: #FEFEFE;
+  border: 1px solid #023E8A;
+  color: #023E8A;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: scale(1.03);
+}
+
+.adquirir{
+  padding-top: 100px;
+  /* background: #000b17; */
+background: linear-gradient(186deg,#000b17 20%, #020202 80%);
+background: -webkit-linear-gradient(186deg,#000b17 20%, #020202 80%);
+background: -moz-linear-gradient(186deg,#000b17 20%, #020202 80%);
+}
+
+.img-clie{
+  width: 90%;
+  height: auto;
+}
+
+.btn-portafolio{
+  background-color: var(--bs-azul);
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #FEFEFE;
+}
+
+.btn-portafolio:hover{
+  background-color: #FEFEFE;
+  color: var(--bs-azul);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  outline: 1px solid var(--bs-azul);
+}
+
+.bg-footer{
+    background-color: #002f55e8;
+}
+
+/* Contenedor con perspectiva 3D */
+.flip-card {
+  perspective: 1000px;
+  height: 100%;
+}
+
+.flip-card-inner {
+  display: grid;
+  grid-template-areas: "front";
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+  height: 100%;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  grid-area: front;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  border: 2px solid #FEFEFE;
+  background-color: #0202025b;
+  padding: 12px;
+}
+
+
+.flip-card-front{
+  background-color: #0f569948;
+  border: 1px solid #0f569948;
+}
+
+.flip-card-front:hover {
+  background-color: var(--bs-azul);
+  color: #FEFEFE;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* transform: scale(1.02); */
+}
+
+.card-contacto-inputs{
+  background-color: #FEFEFE;
+  color: #002F55;
+}
+
+.card-contacto-ubicacion{
+  background-color: #002F55;
+}
+
+.contact-inputs{
+  background-color: #002F55;
+  height: 40px;
+  border: none;
+  color: #FEFEFEdf;
+  border-radius: 10px;
+  font-size: 0.9em
+}
+
+.contact-inputs::placeholder{
+  color: #FEFEFE;
+  opacity: 0.50;
+  
+}
+.btn-enviar{
+  border: 2px solid #002F55;
+  background-color: transparent;
+  border-radius: 10px;
+  color: #002F55;
+  width: 40%;
+  margin-top: 12px;
+}
+
+.btn-enviar:hover{
+  background-color: #002F55;
+  color: #FEFEFE;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cads-encuentranos{
+  color: #002F55;
+  background-color: #FEFEFE;
+}

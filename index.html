@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARBIMaps</title>
+    <link rel="icon" href="imagen/logoarbi.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- barra de navegacion -->
+
+    <nav class="navbar navbar-expand bg-body-transparent mx-2 p-0" data-bs-theme="dark">
+        <div class="container-fluid p-1 border-bottom header fixed-top px-sm-5 px-2">
+            <a href="https://www.arbitrium.com.co/">
+                <img src="imagen/logoarbi.png" style="width: 60px" class="img-hero-nav" alt="Logo">
+            </a>
+
+            <div class="navbar-nav ms-auto d-flex align-items-center">
+                <!-- Inicio de sesión -->
+                <a class="nav-link i-sesion mx-2 d-flex align-items-center" href="Login.html">
+                    <i class="bi bi-person-circle fs-5"></i>
+                    <span class="d-none d-sm-inline ms-2">Iniciar Sesión</span>
+                </a>
+
+                <!-- Dropdown Visores -->
+                <div class="nav-item dropdown mx-3 i-sesion ">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-crosshair fs-5"></i>
+                        <span class="d-none d-sm-inline ms-2">Visores</span>
+                    </a>
+                    <ul class="dropdown-menu menu text-white mt-2">
+                        <li><a class="dropdown-item menuitem my-2" href="https://silver-clafoutis-71c349.netlify.app/"
+                                target="_blank">Neiva</a></li>
+                        <li><a class="dropdown-item menuitem my-2" href="https://inquisitive-bunny-aea5bc.netlify.app/"
+                                target="_blank">Arboletes</a></li>
+                        <li><a class="dropdown-item menuitem my-2" href="https://inquisitive-bunny-aea5bc.netlify.app/"
+                                target="_blank">Necoclí</a></li>
+                        <li><a class="dropdown-item menuitem my-2" href="https://inquisitive-bunny-aea5bc.netlify.app/"
+                                target="_blank">San Pedro de Uraba</a></li>
+                        <li><a class="dropdown-item menuitem my-2" href="https://inquisitive-bunny-aea5bc.netlify.app/"
+                                target="_blank">San Juan de Uraba</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Botón de contacto -->
+                <a href="#contacto" class=" btn bs-azul fs-8">Contáctanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sección bienvenido a arbimaps -->
+    <section class=" hero container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 text-center text-md-start">
+                    <div>
+                        <h1 class=" text-white display-4 fw-bold text-md-start text-center">Bienvenido a ARBI<span
+                                class="t">Maps</span>
+                        </h1>
+                        <p class="text-white fs-6 text-md-start text-center">Plataforma web para procesos de
+                            actualización catastral
+                            que permite agregar, actualizar y editar información jurídica, económica y básica de los
+                            predios de tu municipio. Cartografía en tiempo real, recolección de información y más.</p>
+                        <a href="https://inquisitive-bunny-aea5bc.netlify.app/" class="btn bs-azul-vis mt-2">Explorar
+                            Visores</a>
+                        <a href="https://www.arbitrium.com.co/"> <button
+                                class="btn btn-outline-light mt-2 ms-sm-2">Sobre
+                                Nosotros</button></a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 d-flex justify-content-center ">
+                    <img src="imagen/logoarbi.png" style="width: 250px;" alt="Imagen de Bienvenida"
+                        class="img-fluid d-none d-md-block img-hero ">
+                </div>
+
+
+
+                <div class="col-md-12 mb-3">
+                    <div class="row mt-3 g-2">
+                        <!-- Card 1 Observatorio -->
+                        <article class="col-6 col-sm-6 col-lg-3">
+                            <div class="card h-100 card_bg flip-card">
+                                <div class="flip-card-inner">
+                                    <!-- Front -->
+                                    <div class="flip-card-front card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <img src="imagen/observatorio.png" style="width: 2.2em"
+                                                class="card-img-top d-block my-2" alt="Observatorio">
+                                            <button class="btn btn-info fw-bold"
+                                                onclick="this.closest('.flip-card').classList.toggle('flipped')">Ver
+                                                más</button>
+                                        </div>
+                                        <h2 class="card-title fs-6 fw-bold text-start">Observatorio </h2>
+                                        <p class="card-text fs-8 text-start" style="font-size: 0.8em">Conoce nuestro
+                                            observatorio inmobiliario</p>
+                                    </div>
+
+                                    <!-- Back -->
+                                    <div
+                                        class="flip-card-back card-body d-flex flex-column justify-content-between text-center">
+                                        <p class="card-text fs-8" style="font-size: 0.7em">Consulta en tiempo real la
+                                            dinámica del mercado inmobiliario de tu municipio: precios, avalúos, oferta
+                                            y estadísticas de crecimiento urbano.
+                                        </p>
+                                        <button class="btn btn-info mt-2 fw-bold"
+                                            onclick="this.closest('.flip-card').classList.toggle('flipped')">Volver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 2 -->
+                        <article class="col-6 col-sm-6 col-lg-3">
+                            <div class="card h-100 card_bg flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <img src="imagen/info.png" style="width: 2.2em"
+                                                class="card-img-top d-block my-2" alt="Gestion documental">
+                                            <button class="btn btn-info fw-bold"
+                                                onclick="this.closest('.flip-card').classList.toggle('flipped')">Ver
+                                                más</button>
+                                        </div>
+                                        <h2 class="card-title fs-6 fw-bold text-start">Gestion Documental</h2>
+                                        <p class="card-text text-start" style="font-size: 0.8em">Gestiona todos los
+                                            procesos de tu organización desde un solo lugar.</p>
+                                    </div>
+                                    <div
+                                        class="flip-card-back card-body d-flex flex-column justify-content-between text-center">
+                                        <p class="card-text fs-8" style="font-size: 0.7em">Administra empleados, cuentas
+                                            de cobro, trámites PQR e informes. Controla la documentación y visualiza
+                                            datos clave desde un tablero de control en línea.
+                                        </p>
+                                        <button class="btn btn-info mt-2 fw-bold"
+                                            onclick="this.closest('.flip-card').classList.toggle('flipped')">Volver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 3 -->
+                        <article class="col-6 col-sm-6 col-lg-3">
+                            <div class="card  card_bg flip-card">
+                                <div class="flip-card-inner h-100">
+                                    <div class="flip-card-front card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <img src="imagen/maps.png" style="width: 2.2em"
+                                                class="card-img-top d-block my-2" alt="gestion catastral">
+                                            <button class="btn btn-info fw-bold"
+                                                onclick="this.closest('.flip-card').classList.toggle('flipped')">Ver
+                                                más</button>
+                                        </div>
+                                        <h2 class="card-title fs-6 fw-bold text-start">Gestion Catastral</h2>
+                                        <p class="card-text text-start" style="font-size: 0.8em">Simplificamos la
+                                            gestión catastral
+                                            multipropósito</p>
+                                    </div>
+                                    <div
+                                        class="flip-card-back card-body d-flex flex-column justify-content-between text-center">
+                                        <p class="card-text fs-8" style="font-size: 0.7em">Actualiza y gestiona la
+                                            información catastral alfanumérica y geográfica. Radica trámites y cumple
+                                            con los requisitos para la habilitación catastral.
+
+                                        </p>
+                                        <button class="btn btn-info mt-2 fw-bold"
+                                            onclick="this.closest('.flip-card').classList.toggle('flipped')">Volver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 4 -->
+                        <article class="col-6 col-sm-6 col-lg-3">
+                            <div class="card  card_bg flip-card">
+                                <div class="flip-card-inner h-100">
+                                    <div class="flip-card-front card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <img src="imagen/desarrollo.png" style="width: 2.2em"
+                                                class="card-img-top d-block my-2" alt="Desarrollo SIG">
+                                            <button class="btn btn-info fw-bold"
+                                                onclick="this.closest('.flip-card').classList.toggle('flipped')">Ver
+                                                más</button>
+                                        </div>
+                                        <h2 class="card-title fs-6 fw-bold text-start">Desarrollo SIG</h2>
+                                        <p class="card-text text-start" style="font-size: 0.8em">Desarrollamos
+                                            herramientas para mejorar la eficiencia</p>
+                                    </div>
+                                    <div
+                                        class="flip-card-back card-body d-flex flex-column justify-content-between text-center">
+                                        <p class="card-text fs-8" style="font-size: 0.7em">Desarrollamos apps móviles
+                                            para captura catastral en campo, con sincronización en tiempo real,
+                                            digitalización de predios y generación de archivos XTF.
+                                        </p>
+                                        <button class="btn btn-info mt-2 fw-bold"
+                                            onclick="this.closest('.flip-card').classList.toggle('flipped')">Volver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion adquirir servicios (Omitido por ahora) -->
+    <!-- <section class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100 adquirir">
+        <div class="container">
+            <h1 class="fw-bold text-center">¿Por que adquirir nuestros servicios?</h1>
+            <h5 class="text-center fs-6 mx-5 my-3">Combinamos tecnología de punta, conocimiento experto y
+                herramientas
+                robutas
+                para
+                brindarle un servicio
+                integral en gestion territoral.</h5>
+        </div>
+        <div class="container mt-4">
+            <div class="row g-3  pb-2 px-5">
+
+                Card 1 Modelo de Dominio 
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100  card_ad_servi">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <img src="imagen/1.png" style="width: 4em" class="card-img-top d-block my-2"
+                                alt="Tecnología">
+                            <h2 class="card-title fs-6 fw-bold text-start text-center">Modelo de dominio catastral
+                            </h2>
+                            <p class="card-text text-center" style="font-size: 0.8em">Un sistema robusto y flexible
+                                que
+                                se adapta alas necesidades específicas de su municipio</p>
+                            <button class="btn btn-outline-light mt-2 btn_ad_servi">Leer más</button>
+                        </div>
+                    </div>
+                </article>
+
+                 Card 2 herramientas tecnológicas 
+
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 card_ad_servi">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <img src="imagen/2.png" style="width: 4em" class="card-img-top d-block my-2"
+                                alt="Tecnología">
+                            <h2 class="card-title fs-6 fw-bold text-center">Herramientas tecnológicas de última
+                                generación</h2>
+                            <p class="card-text text-center" style="font-size: 0.8em">Plataformas intuitivas y
+                                fáciles
+                                de
+                                usar que agilizan la recolección, análisis y visualización de datos catastrales.</p>
+                            <button class="btn btn-outline-light mt-2 btn_ad_servi">Leer más</button>
+                        </div>
+                    </div>
+                </article>
+
+                 card 3 Equipo de expertos 
+
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 card_ad_servi">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <img src="imagen/3.png" style="width: 4em" class="card-img-top d-block my-2"
+                                alt="Tecnología">
+                            <h2 class="card-title fs-6 fw-bold text-center">Equipo de profesionales altamente
+                                calificados
+                            </h2>
+                            <p class="card-text text-center" style="font-size: 0.8em">Expertos en gestión catastral,
+                                planificación territorial y desarrollo urbano que brinda un acompaña,miento
+                                personalizado.</p>
+                            <button class="btn btn-outline-light mt-2 btn_ad_servi">Leer más</button>
+                        </div>
+                    </div>
+                </article>
+
+                 card 4 usos y aplicaciones 
+
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 card_ad_servi">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <img src="imagen/4.png" style="width: 4em" class="card-img-top d-block my-2"
+                                alt="Tecnología">
+                            <h2 class="card-title fs-6 fw-bold text-center">Usos y aplicaciones</h2>
+                            <p class="card-text text-center fw-light fs-8" style="font-size: 0.8em">Fundamentales en
+                                gestión
+                                del
+                                territorio, agricultura, planificación urbana, permitiendo mediciones precisas,
+                                identificación de características geográficas y evaluación ambiental.</p>
+                            <button class="btn btn-outline-light mt-2 btn_ad_servi">Leer más</button>
+                        </div>
+                    </div>
+                </article>
+    </section> -->
+
+    <!-- sección nuestro clientes -->
+    <section class="container  d-flex flex-column justify-content-center align-items-center "
+        style="margin-top: 60px; margin-bottom: 60px;">
+        <div class="row d-flex align-items-center">
+            <div class="col-sm-12 col-md-5 order-2 order-md-1">
+                <div class="row">
+                    <div class="col-4 p-3 d-flex justify-content-center align-items-center"><img
+                            class="img-clie img-fluid" src="./imagen/empresas/ADR_BLANCO.png">
+                    </div>
+                    <div class="col-4 p-3 d-flex justify-content-center align-items-center"><img
+                            class="img-clie img-fluid" src="./imagen/empresas/AMB_BLANCO.png" alt="logo empresa"></div>
+                    <div class="col-4 p-3 d-flex justify-content-center align-items-center"><img class="img-clie"
+                            src="./imagen/empresas/ANI_BLANCO.png" alt="logo empresa"></div>
+                    <div class="col-4 p-3 d-flex justify-content-center align-items-center"><img class="img-clie"
+                            src="./imagen/empresas/CEIBAS_BLANCO.png" alt="logo empresa"></div>
+                    <div class="col-4 p-3 d-flex justify-content-center align-items-center"><img class="img-clie"
+                            src="./imagen/empresas/EPM_BLANCO.png" alt="logo empresa"></div>
+                    <div class="col-4 p-3 d-flex justify-content-center align-items-center "><img class="img-clie"
+                            src="./imagen/empresas/METRO_BOGOTA_BLANCO.png" alt="logo empresa"></div>
+                    <div class="col-6 p-3 d-flex justify-content-center align-items-center "><img class="img-clie"
+                            src="./imagen/empresas/INCODER_BLANCO.png" alt="logo empresa"></div>
+                    <div class="col-6 p-3 d-flex justify-content-center align-items-center"><img class="img-clie"
+                            src="./imagen/empresas/GEB_BLANCO.png" alt="logo empresa"></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-7 order-1 order-md-2 pb-5 pb-md-0">
+                <div class="container d-flex flex-column text-center gap-3 ">
+                    <h1 class="fw-bold">Clientes que confían, resultados que respaldan</h1>
+                    <p class="fw-light fs-6">Hemos trabajado de la mano con nuestros clientes para brindar soluciones
+                        catastrales efectivas y
+                        puntuales. Gracias a nuestro enfoque oportuno y nuestro compromiso técnico, seguimos
+                        fortaleciendo
+                        la gestión del territorio en todo el país.</p>
+
+                    <a
+                        href="https://www.arbitrium.com.co/wp-content/uploads/2020/12/Arbitrium-2018-Presentacion-corporativa_0-comprimido.pdf">
+                        <button class="btn-portafolio">Portafolio <i
+                                class="bi bi-arrow-up-right-circle"></i></i></button></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion de contacto -->
+    <section id="contacto"
+        class="hero-contacto container-fluid d-flex flex-column justify-content-center align-items-center py-5">
+        <div class="container text-center px-sm-5">
+            <h1 class="fs-sm-1  fw-bold">¡Contáctanos!</h1>
+            <div class="row p-3 g-4 px-0">
+                <div class="col-12 col-lg-6 px-md-5 ">
+                    <div
+                        class="container rounded-4 py-4 card-contacto-inputs h-100 d-flex flex-column justify-content-center align-items-center card-contacto">
+                        <h1 class="fs-3 fw-bold">¿Tienes alguna duda?</h1>
+                        <p>Comunícate con nosotros</p>
+                        <form class="d-flex flex-column align-items-center" style="width: 80%;">
+                            <input placeholder="Ingesa tu nombre" class="form-control mb-3 contact-inputs" type="text"
+                                name="name" required>
+                            <input placeholder="Ingresa tu correo" class="form-control mb-3 contact-inputs" type="text"
+                                name="name" required>
+                            <input placeholder="Ingresa tu numero telefónico " class="form-control mb-3 contact-inputs"
+                                type="text" name="name" required>
+                            <input placeholder="Ingesa el asunto" class="form-control mb-3 contact-inputs" type="text"
+                                name="name" required>
+                            <textarea placeholder="Describe tu duda" class="form-control contact-inputs"
+                                style="height: 40%; resize: none;"></textarea>
+                            <button class="btn-enviar">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 px-md-5 ">
+                    <div
+                        class="container rounded-4 p-4 card-contacto-ubicacion h-100 d-flex flex-column justify-content-center align-items-center   ">
+                        <h2 class="fs-3 mt-2">Mas información</h2>
+                        <div class="row px-md-4 px-2">
+                            <div class="container col-6 p-1">
+                                <article
+                                    class="cads-encuentranos rounded-4 h-100 gap-1 py-1 d-flex flex-column justify-content-center ">
+                                    <i class="bi bi-envelope-arrow-up fs-4"></i>
+                                    <h5 class="fw-bold m-0 fs-7">Correo</h5>
+                                    <p class="m-0 " style="font-size: 0.7em;">info@arbitrium.com.co
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="container col-6 p-1">
+                                <article
+                                    class="cads-encuentranos rounded-4 bg-light h-100 gap-1 py-1 d-flex flex-column justify-content-center ">
+                                    <i class="bi bi-telephone fs-4"></i>
+                                    <h5 class="fw-bold m-0 fs-8">Celular</h5>
+                                    <p class="m-0" style="font-size: 0.7em;">318 377 7066 <br>310 673 7702 </p>
+                                </article>
+                            </div>
+                            <div class="container col-12 p-1">
+                                <article
+                                    class="cads-encuentranos rounded-4  gap-1 py-3 d-flex flex-column justify-content-center">
+                                    <i class="bi bi-geo-alt-fill fs-4"></i>
+                                    <h5 class="fw-bold m-0 fs-8">Nuestra sede Neiva</h5>
+                                    <p class="m-0 p-2 " style="font-size: 0.7em;">Cra. 15 No 26 -12
+                                        Sur- Oficina 403 Edificio
+                                        Empresarial Prohuila</p>
+                                </article>
+                            </div>
+                            <article class="col-12 p-1 ">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.7633204175827!2d-75.28038243627832!3d2.9053545032845713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b736127aed24b%3A0x64a3318a86790294!2sEDIFICIO%20EMPRESARIAL%20PROHUILA!5e1!3m2!1ses!2sco!4v1752076764867!5m2!1ses!2sco"
+                                    style="width: 100%;" class="rounded-4 p-0 mt-2"></iframe>
+                            </article>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="container-fluid bg-footer mt-auto py-2 ">
+        <section
+            class="container d-flex flex-sm-column flex-md-row align-items-center justify-content-between gap-3 gap-md-0">
+
+            <!-- Redes sociales -->
+            <ul class="list-unstyled d-flex gap-3 justify-content-center my-1 ">
+                <a href="https://www.facebook.com/profile.php?id=100091909492730&sfnsn=scwspwa&mibextid=RUbZ1f"
+                    target="_blank"><i class=" text-white bi bi-facebook fs-5 opacity-75 "></i></a>
+                <a href="https://www.instagram.com/arbitrium_sas?utm_source=ig_web_button_share_sheet&igsh=MXBtaGp4Nnl3MTl6cA=="
+                    target="_blank"><i class="bi bi-instagram fs-5 opacity-75 text-white"></i></a>
+                <a href="https://wa.me/message/35F5EXJA75Z7F1" target="_blank"><i
+                        class="bi bi-whatsapp fs-5 opacity-75 text-white"></i></a>
+                <a href="https://www.youtube.com/@ArbitriumSas-b8k" target="_blank"><i
+                        class="bi bi-youtube fs-5 opacity-75 text-white"></i></a>
+            </ul>
+
+            <!-- Texto copyright -->
+            <p class="my-0 text-center" style="font-size: 0.6em;">
+                &copy; Copyright <strong>Arbitrium SAS</strong> ARBIMaps 2025
+            </p>
+
+            <!-- <img src="imagen/logo.png" style="width: 60px" class="d-none d-md-block"> -->
+        </section>
+    </footer>
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
