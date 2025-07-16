@@ -89,9 +89,9 @@ filter: drop-shadow(1px 1px 1px #fefefe);
     background-size: cover;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1440px) {
  .texto_login{
-    background-size:80%;
+    background-size:50%;
     background-position: 100% 10%;
     background-repeat: no-repeat;
  }
