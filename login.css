@@ -85,6 +85,16 @@ filter: drop-shadow(1px 1px 1px #fefefe);
 }
 .texto_login{
     color: #0F5699;
+    background-image: url(imagen/logoBack.png);
+    background-size: cover;
+}
+
+@media (min-width: 1025px) {
+ .texto_login{
+    background-size:80%;
+    background-position: 100% 10%;
+    background-repeat: no-repeat;
+ }
 }
 
 .boton_login{

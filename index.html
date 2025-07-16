@@ -18,9 +18,12 @@
     <!-- barra de navegacion -->
 
     <nav class="navbar navbar-expand bg-body-transparent mx-2 p-0" data-bs-theme="dark">
-        <div class="container-fluid p-1 border-bottom header fixed-top px-sm-5 px-2">
-            <a href="https://www.arbitrium.com.co/">
-                <img src="imagen/logoarbi.png" style="width: 60px" class="img-hero-nav" alt="Logo">
+        <div class="container-fluid p-1 border-bottom header fixed-top px-sm-5 px-3  d-flex ">
+            <a href="https://www.arbitrium.com.co/" target="_blank">
+                <img src="imagen/logoarbi.png" style="width: 55px" class="img-hero-nav" alt="Logo">
+            </a>
+            <a href="https://www.arbitrium.com.co/" target="_blank">
+                <img src="imagen/logo.png" style="width: 80px;" alt="Logo" class="ms-2 border-start d-none d-md-block">
             </a>
 
             <div class="navbar-nav ms-auto d-flex align-items-center">
@@ -30,8 +33,8 @@
                     <span class="d-none d-sm-inline ms-2">Iniciar Sesión</span>
                 </a>
 
-                <!-- Dropdown Visores -->
-                <div class="nav-item dropdown mx-3 i-sesion ">
+                <!-- Dropdown Visores / Se comenta por ahora, más adelante se puede inlcuir nuevamente. -->
+                <!-- <div class="nav-item dropdown mx-3 i-sesion ">
                     <a class="nav-link dropdown-toggle d-flex align-items-center" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-crosshair fs-5"></i>
@@ -50,10 +53,10 @@
                                 target="_blank">San Juan de Uraba</a></li>
 
                     </ul>
-                </div>
+                </div> -->
 
                 <!-- Botón de contacto -->
-                <a href="#contacto" class=" btn bs-azul fs-8">Contáctanos</a>
+                <a href="#contacto" class=" btn bs-azul fs-sm-8" style="font-size: 0.9em;">Contáctanos</a>
             </div>
         </div>
     </nav>
@@ -71,11 +74,15 @@
                             actualización catastral
                             que permite agregar, actualizar y editar información jurídica, económica y básica de los
                             predios de tu municipio. Cartografía en tiempo real, recolección de información y más.</p>
-                        <a href="https://inquisitive-bunny-aea5bc.netlify.app/" class="btn bs-azul-vis mt-2">Explorar
+                        <a href="https://cute-melba-1f0720.netlify.app/" target="_blank"
+                            class="btn bs-azul-vis mt-2">Explorar
                             Visores</a>
-                        <a href="https://www.arbitrium.com.co/"> <button
+                        <a href="https://app.merginmaps.com/login?redirect=/dashboard" target="_blank"> <button
+                                class="btn bs-azul-vis mt-2 ms-sm-2">Captura de datos</button></a>
+                        <a href="https://www.arbitrium.com.co/" target="_blank"> <button
                                 class="btn btn-outline-light mt-2 ms-sm-2">Sobre
                                 Nosotros</button></a>
+
 
                     </div>
                 </div>
@@ -322,10 +329,19 @@
                             src="./imagen/empresas/EPM_BLANCO.png" alt="logo empresa"></div>
                     <div class="col-4 p-3 d-flex justify-content-center align-items-center "><img class="img-clie"
                             src="./imagen/empresas/METRO_BOGOTA_BLANCO.png" alt="logo empresa"></div>
-                    <div class="col-6 p-3 d-flex justify-content-center align-items-center "><img class="img-clie"
+                    <div class="col-4 p-3 d-flex justify-content-center align-items-center "><img class="img-clie"
                             src="./imagen/empresas/INCODER_BLANCO.png" alt="logo empresa"></div>
-                    <div class="col-6 p-3 d-flex justify-content-center align-items-center"><img class="img-clie"
+                    <div class="col-4 p-3 d-flex justify-content-center align-items-center"><img class="img-clie"
+                            src="./imagen/empresas/VLR.png" alt="logo empresa"></div>
+                    <div class="col-4 p-3 d-flex justify-content-center align-items-center"><img class="img-clie"
                             src="./imagen/empresas/GEB_BLANCO.png" alt="logo empresa"></div>
+                    <div class="col-4 p-3 d-flex justify-content-center align-items-center"><img class="img-clie"
+                            src="./imagen/empresas/GARZN.png" alt="logo empresa"></div>
+                    <div class="col-4 p-3 d-flex justify-content-center align-items-center"><img class="img-clie"
+                            src="./imagen/empresas/AMVA.png" alt="logo empresa"></div>
+                    <div class="col-4 p-3 d-flex justify-content-center align-items-center"><img class="img-clie"
+                            src="./imagen/empresas/Bogota.png" alt="logo empresa"></div>
+
                 </div>
             </div>
             <div class="col-sm-12 col-md-7 order-1 order-md-2 pb-5 pb-md-0">
@@ -337,8 +353,8 @@
                         fortaleciendo
                         la gestión del territorio en todo el país.</p>
 
-                    <a
-                        href="https://www.arbitrium.com.co/wp-content/uploads/2020/12/Arbitrium-2018-Presentacion-corporativa_0-comprimido.pdf">
+                    <a href="https://hvap3wvdptc5xswg.public.blob.vercel-storage.com/Brochure_%20Arbitrium_2025.pdf"
+                        target="_blank">
                         <button class="btn-portafolio">Portafolio <i
                                 class="bi bi-arrow-up-right-circle"></i></i></button></a>
 
@@ -377,7 +393,7 @@
                 <div class="col-12 col-lg-6 px-md-5 ">
                     <div
                         class="container rounded-4 p-4 card-contacto-ubicacion h-100 d-flex flex-column justify-content-center align-items-center   ">
-                        <h2 class="fs-3 mt-2">Mas información</h2>
+                        <h2 class="fs-3 mt-2 fw-bold">Mas información</h2>
                         <div class="row px-md-4 px-2">
                             <div class="container col-6 p-1">
                                 <article
@@ -393,7 +409,7 @@
                                     class="cads-encuentranos rounded-4 bg-light h-100 gap-1 py-1 d-flex flex-column justify-content-center ">
                                     <i class="bi bi-telephone fs-4"></i>
                                     <h5 class="fw-bold m-0 fs-8">Celular</h5>
-                                    <p class="m-0" style="font-size: 0.7em;">318 377 7066 <br>310 673 7702 </p>
+                                    <p class="m-0" style="font-size: 0.7em;">318 377 7066 <br> 310 673 7702 </p>
                                 </article>
                             </div>
                             <div class="container col-12 p-1">
